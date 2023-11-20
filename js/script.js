@@ -1,10 +1,18 @@
-let km = prompt ("Quanti chilometri desideri percorrere")
-let eta = prompt ("Inserisci la tua eta")
+let nome = prompt ("Inserisca il suo nome")
+let cognome = prompt ("Inserisca il suo cognome")
+let km = prompt ("Quanti chilometri desidera percorrere")
+let eta = prompt ("Inserisca la sua eta")
 let tariffa = 0.21
 let biglietto = tariffa * km;
 let biglietto_scontato;
+
+
+console.log(nome)
+console.log(cognome)
 console.log(km)
 console.log(eta)
+
+document.getElementById(`cliente`).innerHTML = nome + " " + cognome
 
 if(eta <= 18){
     biglietto_scontato = biglietto - biglietto * 0.20;
